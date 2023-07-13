@@ -27,7 +27,7 @@ def predict(Open,High,Low,Volume):
     y_new_predict=model.predict(x_new)
     return y_new_predict
 def main():
-        df=pd.read_csv("ADANIENT.csv")
+        df=pd.read_csv('ADANIENT.csv')
         x=df.drop(['Close','Date','Adj Close'],axis=1)
         y=df['Close']
 
